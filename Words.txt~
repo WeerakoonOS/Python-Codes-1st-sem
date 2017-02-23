@@ -1,0 +1,8 @@
+The error occurs when our program encounters a blank line! Of course there
+are “zero words” on a blank line. Why didn’t we think of that when we were
+writing the code. When the code looks for the first word (word[0]) to check
+to see if it matches “From”, we get an “index out of range” error.
+This of course is the perfect place to add some guardian code to avoid
+checking the first word if the first word is not there. There are many ways
+to protect this code, we will choose to check the number of words we have
+before we look at the first word:
